@@ -28,8 +28,8 @@ Ao executar o script inicial, recebi o erro `OSError: exception: access violatio
 Foi necessário definir explicitamente os tipos de argumentos (`argtypes`) e retorno (`restype`) das funções da API do Windows para garantir compatibilidade com ponteiros de 64-bit:
 ```python
 ctypes.windll.kernel32.VirtualAlloc.restype = ctypes.c_void_p
-ctypes.memmove(ptr, buf, len(buf)) # Uso de memmove para segurança```
-
+ctypes.memmove(ptr, buf, len(buf)) # Uso de memmove para segurança
+```
 ---
 *Laboratório realizado para fins acadêmicos.*
 

@@ -29,3 +29,7 @@ Foi necessário definir explicitamente os tipos de argumentos (`argtypes`) e ret
 ```python
 ctypes.windll.kernel32.VirtualAlloc.restype = ctypes.c_void_p
 ctypes.memmove(ptr, buf, len(buf)) # Uso de memmove para segurança
+
+---
+*Laboratório realizado para fins acadêmicos.*
+
